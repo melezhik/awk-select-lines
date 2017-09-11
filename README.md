@@ -10,19 +10,19 @@ the code is taken from [StackOverflow](https://stackoverflow.com/a/38972737/5147
 
     $ sparrow plg install awk-select-lines
 
-
 # USAGE
 
-To print lines betwenn two patterns (`$pat1` and `$pat1`) in `$file`:
+To print lines between two patterns (`$pat1` and `$pat1`) in `$file`:
 
     $ sparrow plg run awk-select-lines \
+    --format concise  # to strip reports lines 
     --param file=/path/to/file/example.txt \
-    --format concise --param pat1=PAT1 --param pat2=PAT2 \
+    --param pat1=PAT1 --param pat2=PAT2 \
     --param mode=2
 
 Setting mode:
 
-`Mode` parameter define the selection logic, based on explnation taken from
+`Mode` parameter define the selection logic, based on explanation taken from
 
 [https://stackoverflow.com/a/38972737/5147708](https://stackoverflow.com/a/38972737/5147708)
 
